@@ -79,23 +79,3 @@ void freeLinkedList(LinkedList* list) {
 
     list->head = NULL;
 }
-
-int main() {
-    LinkedList list;
-    initLinkedList(&list);
-
-    addNode(&list, 10);
-    addNode(&list, 20);
-    addNode(&list, 30);
-
-    printf("Linked List: ");
-    printLinkedList(&list);
-
-    deleteNode(&list, 20);
-    printf("After deleting 20: ");
-    printLinkedList(&list);
-
-    freeLinkedList(&list);
-
-    return 0;
-}
